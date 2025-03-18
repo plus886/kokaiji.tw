@@ -1,22 +1,29 @@
-<!doctype html>
+---
+import "./src/styles/global.css";
+---
+
+<script
+  is:inline
+  src="https://webfont.fontplus.jp/accessor/script/fontplus.js?3Tt6wldHrYg%3D&box=TZoH12Fyg3w%3D&aa=1&ab=1"
+></script>
+
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>康凱爾 kokaiji.io</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  body {
+    color: #2a2a2a;
+    background-color: #ebeae2;
+    font-family: "FOT-筑紫Aヴィンテージ明S Pro R", serif;
+  }
 </style>
