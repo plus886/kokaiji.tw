@@ -1,11 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import WorksText from "../components/WorksText.astro";
+import WorksMusic from "../components/WorksMusic.astro";
+import WorksPhoto from "../components/WorksPhoto.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	お仕事のお誘いは kokaiji@gmail.com までお願いいたします。
+  <div class="max-w-3xl mx-auto">
+    <Header />
+    <Hero />
+    <About />
+    <WorksText />
+    <WorksMusic />
+    <WorksPhoto />
+    <Footer />
+  </div>
 </Layout>

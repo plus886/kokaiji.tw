@@ -1,0 +1,69 @@
+---
+import Section from "./Section.astro";
+import Block from "./Block.astro";
+import Separator from "./Separator.astro";
+import { Image } from "astro:assets";
+import fluonikaImage from "../assets/fluonika.jpg";
+import gardenerImage from "../assets/gardener.jpg";
+---
+
+<Section title="作曲したもの">
+  <Block title="Fluonika / フルオニカ" publishedAt="2024 - ">
+    <p class="py-2">
+      Beyond sound, where words fade.<br />
+      言葉にできない感情、音楽にできない文脈。それぞれが溶け合う地平で。
+    </p>
+    <p class="py-2">
+      快楽的なビートは何かを表現しうるのか？詩情溢れるLo-Fiビートプロジェクト。
+      各種ストリーミングサービスにて配信中。
+    </p>
+    <p class="pb-24">
+      <a
+        class="after:content-[',']"
+        href="https://www.heibonsha.co.jp/book/b657001.html"
+        target="_blank">Spotifyで聴く</a
+      >
+    </p>
+    <Image
+      src={fluonikaImage}
+      alt="Me"
+      class="object-cover w-full h-64 object-[0_100%] rounded-lg opacity-90 grayscale-45 sepia-30"
+    />
+  </Block>
+  <Separator />
+  <Block title="Gardener / 庭師" publishedAt="2021">
+    <p class="py-2">
+      "someone who works in a garden, growing plants and making it look
+      attractive."
+    </p>
+    <p class="py-2">
+      帰り道を忘れた旅人が、庭師であることを受け入れるまでの物語。<a
+        href="https://gardener.kokaiji.tw"
+        target="_blank">八篇のエッセイ</a
+      >と共に紡がれるピアノソロアルバム。イラスト担当は台湾のイラストレーター
+      <a href="https://www.facebook.com/fionstewart/" target="_blank"
+        >Fion Stewart</a
+      >。
+    </p>
+    <p class="py-2">
+      各種ストリーミングサービスにて配信中のほか、ブックレット付きCDも数量限定で販売中。
+    </p>
+    <p class="pb-24">
+      <a
+        class="after:content-[',']"
+        href="https://www.heibonsha.co.jp/book/b657001.html"
+        target="_blank">Spotifyで聴く</a
+      >
+      <a
+        class="after:content-[',']"
+        href="https://www.heibonsha.co.jp/book/b657001.html"
+        target="_blank">PinkoiでCDを購入する</a
+      >
+    </p>
+    <Image
+      src={gardenerImage}
+      alt="Me"
+      class="object-cover w-full h-64 object-[0_50%] rounded-lg opacity-90 grayscale-45 sepia-30"
+    />
+  </Block>
+</Section>

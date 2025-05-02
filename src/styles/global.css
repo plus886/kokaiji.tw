@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@layer base {
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    background-color: #e6e5d7;
+    transition: all 0.3s ease-in;
+  }
+}
+
+@theme {
+  --font-serif: "FOT-筑紫Aヴィンテージ明S Pro R", serif;
+  --color-asp: #f6f5e7;
+}

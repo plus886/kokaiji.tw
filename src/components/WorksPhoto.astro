@@ -1,0 +1,48 @@
+---
+import Section from "./Section.astro";
+import Block from "./Block.astro";
+import Separator from "./Separator.astro";
+import { Image } from "astro:assets";
+import retroticaImage from "../assets/retrotica.jpg";
+import threeFlowersImage from "../assets/threeflowers.jpg";
+---
+
+<Section title="撮影したもの">
+  <Block title="翳光臺灣 / Formosa Chiaroscuro" publishedAt="2024 -">
+    <p class="py-2 italic">
+      自分ではなにも説明できない写真は、推論、思索、空想へのつきることのない誘いである。（スーザン・ソンタグ）
+    </p>
+    <p class="py-2">
+      とある異邦人の日常を積み重ねて台湾を表現するプロジェクト。現在進行中。
+    </p>
+    <p class="pb-24">
+      <a class="text-sm" href="https://photo.kokaiji.tw/" target="_blank"
+        >見る</a
+      >
+    </p>
+    <Image
+      src={retroticaImage}
+      alt="Me"
+      class="object-cover w-full h-64 object-[0_50%] rounded-lg opacity-90 grayscale-45 sepia-30"
+    />
+  </Block>
+  <Separator />
+  <Block title="Formosa and Three Flowers / 台湾と三つの花" publishedAt="2020">
+    <p class="py-2">Life, as watering flowers.</p>
+    <p class="py-2">
+      台湾で過ぎていくなにげない日常生活を、なにげないピアノの旋律で飾る映像プロジェクト。未完成。
+    </p>
+    <p class="pb-24">
+      <a
+        class="text-sm"
+        href="https://www.heibonsha.co.jp/book/b657001.html"
+        target="_blank">YouTubeで視聴する</a
+      >
+    </p>
+    <Image
+      src={threeFlowersImage}
+      alt="Me"
+      class="object-cover w-full h-64 object-[0_50%] rounded-lg opacity-90 grayscale-45 sepia-30"
+    />
+  </Block>
+</Section>

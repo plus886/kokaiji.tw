@@ -1,0 +1,29 @@
+---
+import Section from "./Section.astro";
+import Block from "./Block.astro";
+import { Image } from "astro:assets";
+import bookImage from "../assets/bookmock.jpg";
+---
+
+<Section title="執筆したもの">
+  <Block title="日本人のための台湾学入門（平凡社新書）" publishedAt="2025">
+    <p class="py-2">
+      台湾在住の日本人である筆者が、歴史上内部に複雑な多様性を抱えざるを得なかった「台湾」という概念がどう作られてきたのかを描く。
+    </p>
+    <p class="pb-24">
+      <a
+        class="after:content-[',']"
+        href="https://www.heibonsha.co.jp/book/b662221.html"
+        target="_blank">出版社から購入</a
+      >
+      <a href="https://www.amazon.co.jp/dp/4582860834" target="_blank"
+        >Amazonで購入</a
+      >
+    </p>
+    <Image
+      src={bookImage}
+      alt="日本人のための台湾学"
+      class="object-cover w-full h-64 object-[0_75%] rounded-lg opacity-90 grayscale-75 sepia-30"
+    />
+  </Block>
+</Section>

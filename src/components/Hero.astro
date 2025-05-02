@@ -1,0 +1,42 @@
+---
+import Section from "./Section.astro";
+import Block from "./Block.astro";
+import { Image } from "astro:assets";
+import heroImage from "../assets/hero2.jpg";
+---
+
+<Section title="執筆 / 音樂 / 攝影">
+  <Block>
+    <p class="md:pt-24 pb-2 flex gap-2">
+      <a
+        class="after:content-[',']"
+        href="https://photo.kokaiji.tw"
+        target="_blank">日めくり写真集《翳光臺灣》</a
+      >
+      <a
+        href="https://x.com/plus886"
+        class="after:content-[',']"
+        target="_blank">twitter</a
+      >
+      <a
+        href="https://www.facebook.com/koichiro.ideta"
+        class="after:content-[',']"
+        target="_blank">facebook</a
+      >
+      <a
+        href="https://note.com/plus886note"
+        class="after:content-[',']"
+        target="_blank">note</a
+      >
+      <a href="https://github.com/plus886" target="_blank">github</a>
+    </p>
+    <p class="md:pb-24 pb-2">
+      お仕事や協業のお誘いは kokaiji@gmail.com までお願いいたします。
+    </p>
+  </Block>
+  <Image
+    src={heroImage}
+    alt="Three Flowers"
+    class="object-cover w-full h-64 object-[0_75%] rounded-lg opacity-90 saturate-15 sepia-30"
+  />
+</Section>

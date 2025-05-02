@@ -1,0 +1,16 @@
+---
+const data = Astro.locals;
+---
+
+<footer
+  class="pl-8 pr-8 md:pl-48 pb-12 grid grid-cols-1 justify-items-end gap-2 text-xs"
+>
+  <!-- <menu class="text-xs">日本語 | 繁體中文 </menu> -->
+  <p>
+    &copy; 2025 | 最新デプロイ日時: {data.lastCommitTime} | Commit: {
+      data.lastCommitHash
+    }
+  </p>
+</footer>
+
+<script></script>
