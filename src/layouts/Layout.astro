@@ -1,5 +1,18 @@
 ---
 import "../styles/global.css";
+import heroImage from "../assets/hero2.jpg";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  thumbnail?: string;
+}
+
+const {
+  title = "康凱爾 | Koichiro IDETA",
+  description = "台湾研究者、康凱爾のウェブサイト",
+  thumbnail = "https://images.microcms-assets.io/assets/499294ef5a5a44a78a0e21242b1add3e/807aa7d57df14d0ab1b45fb5504e6d7c/IMG_4242.jpeg",
+}: Props = Astro.props;
 ---
 
 <html lang="ja">
@@ -8,6 +21,15 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="author" content="康凱爾" />
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${thumbnail}?w=1200&h=630`} />
+    <meta property="og:url" content={Astro.request.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@plus886" />
     <title>康凱爾 kokaiji.tw</title>
     <script
       is:inline
