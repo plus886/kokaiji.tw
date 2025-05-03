@@ -1,6 +1,6 @@
 declare namespace App {
   interface Locals {
-    lastCommitHash: String;
-    lastCommitTime: String;
+    lastCommitHash: string;
+    lastCommitTime: string;
   }
 }

@@ -1,5 +1,14 @@
 ---
-const data = Astro.locals;
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
+dayjs.tz.setDefault("Asia/Tokyo");
+
+const { lastCommitHash, lastCommitTime } = Astro.locals;
+const lastCommittedAt = dayjs.tz(dayjs(lastCommitTime));
 ---
 
 <footer
@@ -7,9 +16,13 @@ const data = Astro.locals;
 >
   <!-- <menu class="text-xs">日本語 | 繁體中文 </menu> -->
   <p>
-    &copy; 2025 | 最新デプロイ日時: {data.lastCommitTime} | Commit: {
-      data.lastCommitHash
-    }
+    最新デプロイ日時: {lastCommittedAt.format("YYYY年M月D日")} | Commit: <a
+      class="hover:animate-pulse"
+      href={`https://github.com/plus886/kokaiji.tw/commit/${lastCommitHash}`}
+      target="_blank"
+    >
+      #{lastCommitHash.slice(0, 7)}</a
+    >
   </p>
 </footer>
 
